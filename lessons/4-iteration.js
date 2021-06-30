@@ -1,9 +1,20 @@
-let list = ''
-let num = -1
+function lesson4() {
 
-while (num != '0') {
-  num = prompt('Number:')
-  list = list + num
+  //create a variable 
+  let sum = 0
+  let num = -1
+  let totalNum = 0
+// starts a loop
+  while (num != '') {
+    num = prompt ('Number:')
+    alert('num is' + num)
+    num= Number(num)
+    alert('num is' + num)
+    sum = sum + num 
+    totalNum= totalNum +1
+  }
+  totalNum = totalNum - 1
+  alert(sum/totalNum)
+   
+//outputs blah blah blah
 }
-
-alert(list)
